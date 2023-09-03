@@ -1,0 +1,161 @@
+.jarallax-keep-img {
+    position: relative;
+    z-index: 0;
+}
+.jarallax-keep-img > .jarallax-img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: -100;
+}
+span[data-jarallax-element] {
+    display: inline-block;
+}
+
+/* demo styles */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+p ~ p,
+p ~ div {
+    margin-top: 15px;
+}
+
+small {
+    font-size: 55%;
+    color: #606060;
+}
+a, a:visited, a:hover, a:focus {
+    color: inherit;
+}
+a:hover, a:focus {
+    color: #4f4f4f;
+}
+.jarallax {
+    min-height: 600px;
+}
+.jarallax-keep-img.float-left {
+    margin-right: 15px;
+    margin-left: -60px;
+}
+.jarallax-keep-img.float-right {
+    margin-left: 15px;
+    margin-right: -60px;
+}
+
+@media screen and (max-width: 600px) {
+    .jarallax-keep-img.float-left,
+    .jarallax-keep-img.float-right {
+        margin-right: 0;
+        margin-left: 0;
+        float: none;
+    }
+}
+
+/* hero block */
+.table {
+    display: table;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(39, 35, 51, 0.6);
+    color: #fff;
+}
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* gap */
+.gap {
+    padding: 50px;
+    overflow: hidden;
+}
+.gap h1,
+.gap h2,
+.gap h3 {
+    text-align: center;
+}
+.gap .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gap-half {
+    display: table;
+    width: 100%;
+}
+.gap-half > div {
+    display: table-cell;
+    width: 50%;
+}
+.gap-half .gap-1 .jarallax,
+.gap-half .gap-2 .jarallax {
+    padding-top: 56.25%;
+    min-height: 0;
+    height: 0;
+}
+.gap-half .gap-1 .jarallax {
+    padding-top: 112.5%;
+}
+
+/* Demo Content */
+.content {
+    background-color: #f7f7f7;
+    padding: 80px;
+}
+
+/* Float */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+/* Carousel */
+.carousel {
+    background-color: rgb(39, 35, 51);
+}
+.carousel .carousel-item {
+    width: 33.33%;
+    min-height: 300px;
+}
+@media screen and (max-width: 780px) {
+    .carousel .carousel-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .carousel .carousel-item {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .gap,
+    .content {
+        padding: 50px 30px;
+    }
+}
